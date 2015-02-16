@@ -1,0 +1,32 @@
+<!doctype html>
+<html ng-app="formExample">
+<head>
+    <script src="js/angularjs/angular.js"></script>
+    <script src="js/angularjs/angular-route.js"></script>
+    <script src="js/angularjs/angular-resource.js"></script>
+    <!--
+    <script src="js/invoice2.js"></script>
+    <script src="js/invoice3.js"></script>
+    <script src="js/finance2.js"></script>
+    <script src="js/finance3.js"></script> -->
+    <!-- <script src="js/invoice1.js"></script> -->
+    <script src="js/script.js"></script>
+
+    <!-- <script src="js/angularjs/angular-route.js"></script>
+    <script src="js/angularjs/angular-resource.js"></script> -->
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<h1>Sign Up</h1>
+
+<form name='addUserForm' ng-controller="AddUserController">
+    <div ng-show='message'>
+        {{message}}
+    </div>
+    <button ng-click="doGet()">Get</button>
+    <button ng-click="doPost()">Post</button>
+    <button ng-click="useQ()">Q</button>
+    <button ng-click="getProjectById()">Get Resource</button>
+</form>
+</body>
+</html>
