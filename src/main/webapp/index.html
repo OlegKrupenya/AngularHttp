@@ -2,6 +2,7 @@
 <html ng-app="formExample">
 <head>
     <script src="js/angularjs/angular.js"></script>
+    <script src="js/angularjs/angular-sanitize.js"></script>
     <script src="js/angularjs/angular-route.js"></script>
     <script src="js/angularjs/angular-resource.js"></script>
     <!--
@@ -27,6 +28,8 @@
     <button ng-click="doPost()">Post</button>
     <button ng-click="useQ()">Q</button>
     <button ng-click="getProjectById()">Get Resource</button>
+    {{greeting}}
+    <div ng-bind-html="contents | linky"></div>
 </form>
 </body>
 </html>
